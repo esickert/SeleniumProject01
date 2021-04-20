@@ -18,14 +18,4 @@ public class SeleiumChrome {
         driver.manage().window().maximize();
 
     }
-
-    @Test
-    public void startSelFirfox()    {
-        System.setProperty("webdriver.gecko.driver","SeleniumDrivers//geckodriver");
-        WebDriver driver = new FirefoxDriver();
-        driver.get("http://www.yahoo.com");
-        driver.manage().window().maximize();
-
-    }
-
 }
