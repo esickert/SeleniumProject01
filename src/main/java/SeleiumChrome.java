@@ -4,7 +4,7 @@ public class SeleiumChrome {
 
     @Test
     public void seleniumTest()  {
-        System.out.println("Project for testing Selenium Chrome");
+        System.out.println("Class for testing Selenium Chrome");
     }
 
 }
