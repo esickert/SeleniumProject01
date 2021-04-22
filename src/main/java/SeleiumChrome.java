@@ -6,15 +6,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import static org.junit.Assert.assertEquals;
+
 public class SeleiumChrome {
 
     @Test
     public void seleniumTest()  {
-        System.out.println("Class for testing Selenium Chrome");
+        System.out.println("Class for testing Selenium with Chrome");
     }
 
     @Test
-    public void startSelChrome()    {
+    public void startSelChrome() throws Exception   {
         System.setProperty("webdriver.chrome.driver","SeleniumDrivers//chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get ("http://www.bing.com");
@@ -24,6 +26,10 @@ public class SeleiumChrome {
         search.click();
         search.sendKeys("DOG");
         search.sendKeys(Keys.ENTER);
+
+        driver.findElement(By.cssSelector("#b_results > li:nth-child(1) > h2 > a")).click();
+        Thread.sleep(10000);
+        assertEquals("https://en.wikipedia.org/wiki/Dog","https://en.wikipedia.org/wiki/Dog");
     }
 
 }
