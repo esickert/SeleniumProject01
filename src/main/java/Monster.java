@@ -18,14 +18,16 @@ public class Monster {
         driver.get("http://www.monster.com");
         driver.manage().window().maximize();
 
+
         WebElement login = driver.findElement(By.cssSelector("#gatsby-focus-wrapper > div > header > div > div:nth-child(4) > div > a > svg > path"));
         login.click();
 //this does not work!!!!!!!
-        WebElement user = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/div[3]/div/div/div/form/div/div[1]/div/fieldset[1]/input"));
-        user.click();
-        user.sendKeys("esickert2@gmail.com");
+        WebElement log = driver.findElement(By.linkText("login-tab"));
+        log.click();
+
 
     }
+
 
 
 }
