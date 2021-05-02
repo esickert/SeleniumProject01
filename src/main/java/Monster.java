@@ -24,7 +24,7 @@ public class Monster {
         login.click();
 //        Thread.sleep(10000);
  //this does not work!!!!!!!
-         WebElement log = driver.findElement(By.class("_3xUeAn03lYbCGauXw2kirW"));
+         WebElement log = driver.findElement(By.partialLinkText("LOG IN"));
          log.click();
 
 //        login.sendKeys(Keys.TAB);
