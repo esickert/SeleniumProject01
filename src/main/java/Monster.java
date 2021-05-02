@@ -24,7 +24,8 @@ public class Monster {
         login.click();
 //        Thread.sleep(10000);
  //this does not work!!!!!!!
-         driver.findElement(By.xpath("//*[@id=\"login-tab\"]")).click();
+         WebElement log = driver.findElement(By.class("_3xUeAn03lYbCGauXw2kirW"));
+
 //        login.sendKeys(Keys.TAB);
 
 
