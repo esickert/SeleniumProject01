@@ -34,9 +34,9 @@ public class Monster {
          Thread.sleep(5000);
          driver.findElement(By.cssSelector("#email")).sendKeys("esickert2@gmail.com", Keys.TAB);
 
-         driver.findElement(By.cssSelector("#password-label")).sendKeys("Claude@123",Keys.ENTER);
+         driver.findElement(By.cssSelector("#password")).sendKeys("Claude@123",Keys.ENTER);
 //         email.sendKeys("esickert");//this doesn't work!!!!
- //        
+ //
 
 
 
