@@ -23,7 +23,7 @@ public class Monster {
 
         WebElement login = driver.findElement(By.cssSelector("#gatsby-focus-wrapper > div > header > div > div:nth-child(4) > div > a > svg > path"));
         login.click();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
          WebElement log = driver.findElement(By.cssSelector("#app > div._2Li7HAeS5gwed9A6fafr_9 > div.v1kuomZmTs8WHyMwbPstA > div._1Eyqi-SXAN25ND1E9v-4WI > div > div > div > form > div > div:nth-child(1)"));
          log.click();
@@ -32,6 +32,8 @@ public class Monster {
          WebElement email = driver.findElement(By.id("email-label"));
          email.click();
          Thread.sleep(5000);
+         driver.findElement(By.cssSelector("#email")).sendKeys("esickert2@gmail.com", Keys.TAB);
+         
 //         email.sendKeys("esickert");//this doesn't work!!!!
  //        Actions action = new Actions(driver);
  //        action.keyDown(Keys.CONTROL).sendKeys("e").keyDown(Keys.CONTROL).perform();
