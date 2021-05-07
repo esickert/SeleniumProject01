@@ -33,10 +33,10 @@ public class Monster {
          email.click();
          Thread.sleep(5000);
          driver.findElement(By.cssSelector("#email")).sendKeys("esickert2@gmail.com", Keys.TAB);
-         
+
+         driver.findElement(By.cssSelector("#password-label")).sendKeys("Claude@123",Keys.ENTER);
 //         email.sendKeys("esickert");//this doesn't work!!!!
- //        Actions action = new Actions(driver);
- //        action.keyDown(Keys.CONTROL).sendKeys("e").keyDown(Keys.CONTROL).perform();
+ //        
 
 
 
