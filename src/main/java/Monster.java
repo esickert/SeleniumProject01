@@ -32,9 +32,9 @@ public class Monster {
          WebElement email = driver.findElement(By.id("email-label"));
          email.click();
          Thread.sleep(5000);
-         driver.findElement(By.cssSelector("#email")).sendKeys("esickert2@gmail.com", Keys.TAB);
+         driver.findElement(By.cssSelector("#email")).sendKeys("esic@gmail.com", Keys.TAB);
 
-         driver.findElement(By.cssSelector("#password")).sendKeys("Claude@123",Keys.ENTER);
+         driver.findElement(By.cssSelector("#password")).sendKeys("@123",Keys.ENTER);
 //         email.sendKeys("esickert");//this doesn't work!!!!
  //
 
