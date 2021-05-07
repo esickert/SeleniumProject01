@@ -32,7 +32,7 @@ public class Monster {
          WebElement email = driver.findElement(By.id("email-label"));
          email.click();
          Thread.sleep(5000);
-         email.sendKeys("esickert");//this doesn't work!!!!
+//         email.sendKeys("esickert");//this doesn't work!!!!
  //        Actions action = new Actions(driver);
  //        action.keyDown(Keys.CONTROL).sendKeys("e").keyDown(Keys.CONTROL).perform();
 
