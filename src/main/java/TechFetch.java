@@ -8,7 +8,7 @@ public class TechFetch {
     }
 
     @Test
-    public void login() {
+    public void openWebPage() {
 
     }
 }
