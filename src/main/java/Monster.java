@@ -10,7 +10,7 @@ public class Monster {
 
     @Test
     public void monsterPOM()    {
-        System.out.println("This class is for developpment of a Page Object Model");
+        System.out.println("This class is for developpment of MONSTER login");
     }
 
     @Test
@@ -32,9 +32,9 @@ public class Monster {
          WebElement email = driver.findElement(By.id("email-label"));
          email.click();
          Thread.sleep(5000);
-         driver.findElement(By.cssSelector("#email")).sendKeys("esic@gmail.com", Keys.TAB);
+         driver.findElement(By.cssSelector("#email")).sendKeys("paris@gmail.com", Keys.TAB);
 
-         driver.findElement(By.cssSelector("#password")).sendKeys("@123",Keys.ENTER);
+         driver.findElement(By.cssSelector("#password")).sendKeys("@123"/* ,Keys.ENTER*/);
 //         email.sendKeys("esickert");//this doesn't work!!!!
  //
 
