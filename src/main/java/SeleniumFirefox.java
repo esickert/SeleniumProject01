@@ -17,7 +17,7 @@ public class SeleniumFirefox {
            System.setProperty("webdriver.gecko.driver","SeleniumDrivers//geckodriver");
            WebDriver driver = new FirefoxDriver();
            driver.get("http://www.yahoo.com");
-       //    driver.manage().window().maximize();
+           driver.manage().window().maximize();
 
         WebElement search = driver.findElement(By.cssSelector("#ybar-sbq")); //does not work!!!!!
         search.click();
