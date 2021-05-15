@@ -28,7 +28,7 @@ public class TechFetch {
         WebElement checkBox = driver.findElement(By.cssSelector("#login > div.padtop20.ctrlblk > label > p"));
         System.out.println(checkBox.isSelected());
 //        for(int i = 0; i < 2; i++)  {
-            checkBox.click();
+        checkBox.click();
     //        System.out.println(checkBox.isSelected());
  //           checkBox.click();
  //       }
