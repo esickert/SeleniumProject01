@@ -29,7 +29,7 @@ public class TechFetch {
         System.out.println(checkBox.isSelected());
 //        for(int i = 0; i < 2; i++)  {
             checkBox.click();
-            System.out.println(checkBox.isSelected());
+    //        System.out.println(checkBox.isSelected());
  //           checkBox.click();
  //       }
 
