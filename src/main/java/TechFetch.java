@@ -46,12 +46,13 @@ public class TechFetch {
 
 //        driver.findElement(By.cssSelector("#btnClose")).click();
 
-        Set<String> handles = driver.getWindowHandles();
+/*        Set<String> handles = driver.getWindowHandles();
         for (String handle : handles) {
             if (!handles.equals(mainWindow)) {
                 driver.switchTo(handle);
                 break;
             }
         }
-    }
+    }*/
+}
 }
