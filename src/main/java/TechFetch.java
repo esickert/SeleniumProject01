@@ -37,11 +37,11 @@ public class TechFetch {
         System.out.println(checkBox.isSelected());
 //        for(int i = 0; i < 2; i++)  {
         checkBox.click();
-    //        System.out.println(checkBox.isSelected());
- //           checkBox.click();
+//        System.out.println(checkBox.isSelected());
+//           checkBox.click();
         driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
- //                        By.cssSelector("#email")).sendKeys("paris@gmail.com", Keys.TAB)
-     //   driver.findElement(By.cssSelector("#profjobtitleform > div.widget > div.widget-header")).click();
+//                        By.cssSelector("#email")).sendKeys("paris@gmail.com", Keys.TAB)
+//   driver.findElement(By.cssSelector("#profjobtitleform > div.widget > div.widget-header")).click();
         String mainWindow = driver.getWindowHandle();
 
 //        driver.findElement(By.cssSelector("#btnClose")).click();
