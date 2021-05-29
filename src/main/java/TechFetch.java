@@ -47,7 +47,7 @@ public class TechFetch {
 
    //     selfAssesment.click();
 
-//       driver.findElement(By.cssSelector("#btnClose")).click();
+ //       driver.findElement(By.cssSelector("#btnClose")).click();
 
 /*        Set<String> handles = driver.getWindowHandles();
         for (String handle : handles) {
