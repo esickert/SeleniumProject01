@@ -45,7 +45,7 @@ public class TechFetch {
         String mainWindow = driver.getWindowHandle();
  //       WebElement selfAssesment = driver.findElement(By.cssSelector("#profjobtitleform > div.widget > div.widget-body"));
 
- //       selfAssesment.click();
+ //     selfAssesment.click();
 
  //       driver.findElement(By.cssSelector("#btnClose")).click();
 
