@@ -32,30 +32,11 @@ public class TechFetch {
         driver.findElement(By.cssSelector("#ucHeaderCtrl_divCandidate")).click();
         Thread.sleep(5000);
         driver.findElement(By.cssSelector("#jsloginpop")).click();
-// this is weird as isSelected does't seem to work!!!!
+
         WebElement checkBox = driver.findElement(By.cssSelector("#login > div.padtop20.ctrlblk > label > p"));
-        System.out.println(checkBox.isSelected());
-  //        for(int i = 0; i < 2; i++)  {
         checkBox.click();
-//        System.out.println(checkBox.isSelected());
-//           checkBox.click();
+//
         driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
-//                        By.cssSelector("#email")).sendKeys("paris@gmail.com", Keys.TAB)
-//   driver.findElement(By.cssSelector("#profjobtitleform > div.widget > div.widget-header")).click();
-        String mainWindow = driver.getWindowHandle();
- //       WebElement selfAssesment = driver.findElement(By.cssSelector("#profjobtitleform > div.widget > div.widget-body"));
 
- //     selfAssesment.click();
-
- //       driver.findElement(By.cssSelector("#btnClose")).click();
-
-/*        Set<String> handles = driver.getWindowHandles();
-        for (String handle : handles) {
-            if (!handles.equals(mainWindow)) {
-                driver.switchTo(handle);
-                break;
-            }
-        }
-    }*/
 }
 }
