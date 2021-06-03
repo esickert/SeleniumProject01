@@ -37,6 +37,9 @@ public class TechFetch {
         checkBox.click();
 //
         driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
+        driver.switchTo().frame(22).findElements(By.id("#btnClose"));
+    //    driver.findElement(By.id("#btnClose")).click();
+
 
 }
 }
