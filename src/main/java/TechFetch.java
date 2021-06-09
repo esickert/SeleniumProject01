@@ -39,7 +39,7 @@ public class TechFetch {
         driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
     //doesn't work!!!!!!!!!!!!!!!!!!!!!!!!!1
  //      WebElement frame = driver.switchTo().frame(22).findElement(By.id("#btnClose"));
-        driver.switchTo().frame(22).findElement(By.id("#btnClose"));
+        driver.switchTo().frame(22);
 
 //        frame.click();
     //***********************************************************
