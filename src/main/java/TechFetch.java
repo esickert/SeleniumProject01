@@ -14,7 +14,7 @@ public class TechFetch {
     }
 
     @Test
-    public void openWebPage() throws Exception {
+    public void openWebPage()  {
 
         String emailAddress = "paris@gmail.com";
         String password = "Paris@123";
@@ -24,20 +24,26 @@ public class TechFetch {
 
         driver.get("https://www.techfetch.com/Default.aspx?logout=true");
         driver.manage().window().maximize();
+        try {
+            WebElement candidate = driver.findElement(By.cssSelector("#ucHeaderCtrl_divCandidate > a"));
+            candidate.click();
+            driver.findElement(By.cssSelector("#ucHeaderCtrl_divCandidate")).click();
+            Thread.sleep(5000);
+            driver.findElement(By.cssSelector("#jsloginpop")).click();
 
-        WebElement candidate = driver.findElement(By.cssSelector("#ucHeaderCtrl_divCandidate > a"));
-        candidate.click();
-        driver.findElement(By.cssSelector("#ucHeaderCtrl_divCandidate")).click();
-        Thread.sleep(5000);
-        driver.findElement(By.cssSelector("#jsloginpop")).click();
+            WebElement checkBox = driver.findElement(By.cssSelector("#login > div.padtop20.ctrlblk > label > p"));
+            checkBox.click();
 
-        WebElement checkBox = driver.findElement(By.cssSelector("#login > div.padtop20.ctrlblk > label > p"));
-        checkBox.click();
+            driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
+            driver.switchTo().frame(22);
+            Thread.sleep(5000);
+            driver.findElement(By.id("btnClose")).click();
+        }
+        catch(Exception e)   {
+            System.out.println("ERROR");
+            e.printStackTrace();
+        }
 
-        driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
-        driver.switchTo().frame(22);
-        Thread.sleep(5000);
-        driver.findElement(By.id("btnClose")).click();
 
 }
 }
