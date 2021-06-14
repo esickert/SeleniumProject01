@@ -1,4 +1,3 @@
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 //import org.openqa.selenium.Keys;
@@ -7,13 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.Set;
-
 public class TechFetch {
 
     @Test
     public void techFetch() {
-        System.out.println("To develope selenium automation scripts");
+        System.out.println("To develope selenium automation scripts using junit and maven");
     }
 
     @Test
@@ -24,6 +21,7 @@ public class TechFetch {
 
         System.setProperty("webdriver.chrome.driver","SeleniumDrivers//chromedriver");
         WebDriver driver = new ChromeDriver();
+
         driver.get("https://www.techfetch.com/Default.aspx?logout=true");
         driver.manage().window().maximize();
 
@@ -35,16 +33,11 @@ public class TechFetch {
 
         WebElement checkBox = driver.findElement(By.cssSelector("#login > div.padtop20.ctrlblk > label > p"));
         checkBox.click();
-//      Doesn't work!!!!!
+
         driver.findElement(By.cssSelector("#txtemailid")).sendKeys (emailAddress, Keys.TAB, password, Keys.ENTER);
-    //doesn't work!!!!!!!!!!!!!!!!!!!!!!!!!1
- //      WebElement frame = driver.switchTo().frame(22).findElement(By.id("#btnClose"));
         driver.switchTo().frame(22);
-
-//        frame.click();
-    //***********************************************************
-//
-
+        Thread.sleep(5000);
+        driver.findElement(By.id("btnClose")).click();
 
 }
 }
