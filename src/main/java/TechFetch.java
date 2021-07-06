@@ -38,7 +38,7 @@ public class TechFetch {
             driver.switchTo().frame(22);
             Thread.sleep(5000);
             driver.findElement(By.id("btnClose")).click();
-        }
+         }
         catch(Exception e)   {
             System.out.println("ERROR");
             e.printStackTrace();
