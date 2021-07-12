@@ -19,6 +19,36 @@ public class TechFetch {
         String emailAddress = "paris@gmail.com";
         String password = "Paris@123";
 
+ /*       public class BaseClass
+        {
+
+
+            WebDriver driver;
+
+            @BeforeClass
+            public void setupApplication()
+            {
+
+                Reporter.log("=====Browser Session Started=====", true);
+
+                driver=new ChromeDriver();
+
+                driver.manage().window().maximize();
+
+                driver.get("http://enterprise.demo.orangehrmlive.com/symfony/web/index.php/auth/login");
+
+                Reporter.log("=====Application Started=====", true);
+            }
+
+
+            @AfterClass
+            public void closeApplication()
+            {
+                driver.quit();
+                Reporter.log("=====Browser Session End=====", true);
+
+            }
+*/
         System.setProperty("webdriver.chrome.driver","SeleniumDrivers//chromedriver");
         WebDriver driver = new ChromeDriver();
 
@@ -44,8 +74,9 @@ public class TechFetch {
             System.out.println("ERROR");
             e.printStackTrace();
          }
-
-    driver.quit();
+        WebElement logout = driver.findElement(By.xpath("drop7"));
+   //     logout.click();
+//    driver.quit();
 
 }
 }
