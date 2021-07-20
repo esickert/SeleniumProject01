@@ -74,7 +74,7 @@ public class TechFetch  {
             System.out.println("ERROR");
             e.printStackTrace();
          }
-        WebElement logout = driver.findElement(By.xpath("drop7"));
+   //     WebElement logout = driver.findElement(By.xpath("drop7"));
    //     logout.click();
 //    driver.quit();
 
