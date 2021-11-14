@@ -23,7 +23,7 @@ public class TechFetch  {
         {
 
 
-            WebDriver driver;
+            WebDriver driver
 
             @BeforeClass
             public void setupApplication()
